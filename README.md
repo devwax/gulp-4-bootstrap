@@ -16,3 +16,8 @@ task('clean-static-html',  () => del('../html/**/*', { force: true }))
 
 
 View the Gulpfile and package.json for other tasks and scripts.
+
+### ToDo
+- [ ] Separate vendor js/css into separate tasks for easier CDN-ification
+- [ ] Modularize gulp files
+- [ ] Better starter page(s) and css

@@ -50,7 +50,7 @@ task('publish-aws-task', () => {
 task('sass', () => // Compile Sass
   src([
     'src/assets/scss/*.+(scss|css)',
-    'node_modules/fluidbox/src/css/fluidbox.scss'
+    // 'node_modules/fluidbox/src/css/fluidbox.scss'
   ])
   // .pipe( sourcemaps.init() )
   .pipe( sass({includePaths: ['node_modules/bootstrap/scss/']}) )
@@ -216,7 +216,8 @@ task('zip-dist', cb => {
 task('notify', cb => { log(msg.complete); cb(); })
 
 // Common tasks that run in parallel
-const common_tasks = parallel('vendor-css', 'fa-css', 'fa-webfonts', 'html', 'vendor-js', 'images', 'favicons')
+// const common_tasks = parallel('vendor-css', 'fa-css', 'fa-webfonts', 'html', 'vendor-js', 'images', 'favicons')
+const common_tasks = parallel('fa-css', 'fa-webfonts', 'html', 'images', 'favicons')
 
 // Main Build Tasks
 task('build',       series('clean', common_tasks, 'sass-build', 'js-build', 'notify'))
