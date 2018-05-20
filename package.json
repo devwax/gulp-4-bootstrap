@@ -2,7 +2,15 @@
   "name": "Gulp-4-Bootstrap",
   "version": "1.0.0",
   "description": "Gulp 4 with Bootstrap 4",
-  "main": "index.js",
+  "homepage": "https://github.com/devwax/gulp-4-bootstrap",
+  "url" : "https://github.com/devwax/gulp-4-bootstrap/issues",
+  "author" : "Steve Monsen",
+  "email" : "smonsen@devwax.com",
+  "main": "gulpfile.js",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/devwax/gulp-4-bootstrap.git"
+  },
   "scripts": {
     "start": "gulp dev",
     "dev": "gulp dev",
@@ -12,7 +20,7 @@
     "publish-aws": "gulp publish-aws"
   },
   "keywords": [],
-  "author": "",
+  "author": "Steve Monsen <smonsen@devwax.com> (https://devwax.com)",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^8.4.1",
@@ -33,9 +41,11 @@
     "untildify": "^3.0.2"
   },
   "dependencies": {
+    "bootstrap": "^4.1.1"
+  },
+  "unused": {
     "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
     "aos": "^2.2.0",
-    "bootstrap": "^4.1.1",
     "fluidbox": "^2.0.5",
     "gsap": "^1.20.4",
     "jarallax": "^1.10.3",
