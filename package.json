@@ -1,0 +1,46 @@
+{
+  "name": "Gulp-4-Bootstrap",
+  "version": "1.0.0",
+  "description": "Gulp 4 with Bootstrap 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp dev",
+    "dev": "gulp dev",
+    "build": "gulp build",
+    "static": "gulp static",
+    "zip": "gulp zip",
+    "publish-aws": "gulp publish-aws"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8.4.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.4",
+    "cssnano": "^4.0.0-rc.2",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-awspublish": "^3.3.3",
+    "gulp-babel": "^7.0.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-zip": "^4.1.0",
+    "pump": "^3.0.0",
+    "untildify": "^3.0.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
+    "aos": "^2.2.0",
+    "bootstrap": "^4.1.1",
+    "fluidbox": "^2.0.5",
+    "gsap": "^1.20.4",
+    "jarallax": "^1.10.3",
+    "jquery": "^3.3.1",
+    "owl.carousel": "^2.3.4",
+    "popper.js": "^1.14.3"
+  }
+}

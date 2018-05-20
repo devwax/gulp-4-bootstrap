@@ -1,0 +1,48 @@
+// _theme_core.scss
+//
+// This is the core sass/css for the theme. It would be better to add your own
+// sass/css in _custom_core.scss. But you can certainly edit this file if
+// necessary.
+//
+// See main.scss for sass load order.
+
+// @import url("https://use.typekit.net/zvu3trs.css");
+// @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Share+Tech+Mono');
+
+// .dancing-script {
+//   font-family: 'Dancing Script', cursive, sans-serif !important;
+// }
+//
+// .share-tech-mono {
+//   font-family: 'Share Tech Mono', 'Helvetica', Arial, sans-serif !important;
+// }
+
+::selection {
+  color: lightgray;
+  background-color: black !important;
+}
+
+::-moz-selection {
+  color: lightgray;
+  background-color: black !important;
+}
+
+@mixin bg-image-opacity($image-url, $opacity: 1) {
+  &.bg-image-transparent {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    &::after {
+      content: "";
+      background-image: url(#{$image-url});
+      opacity: $opacity;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+}

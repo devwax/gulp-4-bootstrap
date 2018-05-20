@@ -1,0 +1,41 @@
+// Bootstrap Core
+//
+// Selectively import Bootstrap 4 core components from node_modules/bootstrap
+//
+// Uncomment each import that you want to use in your project.
+// Comment out each import that you don't need and it will not be included.
+//
+// See main.scss for load order
+
+// @import "root";
+@import "reboot";
+@import "type";
+@import "images";
+// @import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+// @import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+// @import "breadcrumb";
+// @import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+// @import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "utilities";
+@import "print";

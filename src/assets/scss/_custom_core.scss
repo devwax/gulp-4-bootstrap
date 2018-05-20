@@ -1,0 +1,20 @@
+// _custom_core.scss
+//
+// This is where you can add your own custom classes and sass/css.
+//
+// See main.scss for load order
+
+// Example of custom variable used below in .theme-variable-class
+$custom-blue-color: #0f65b1;
+
+/* These are examples of custom classes */
+
+.my-custom-class {
+  color: theme-color("primary");
+  background-color: $theme-variables-bgcolor;
+}
+
+.theme-variable-class {
+  color: $custom-blue-color;
+  background-color: $theme-variables-bgcolor;
+}

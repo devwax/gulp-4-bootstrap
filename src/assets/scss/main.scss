@@ -1,0 +1,24 @@
+// main.scss
+//
+// The following is the load order of the sass files.
+
+@import "bootstrap_variables";  // Customize bootstrap variables
+@import "bootstrap_core";       // Core bootstrap components
+@import "theme_variables";      // Customize theme variables
+@import "theme_core";           // Core theme Sass/CSS
+@import "custom_variables";     // Your custom Sass/CSS
+@import "custom_core";          // Your custom Sass/CSS
+
+//
+// Custom imports and Sass
+//
+// Add your own imports and/or Sass and CSS styles below or above
+// in the load order. Or use _custom_variables.scss and _custom_core.scss
+// to add your custom styles and variables. which are the lasts two files
+// loaded above.
+//
+// Example import:
+// Note: "my_scss_file" is named _my_scss_file.scss in the current directory.
+// The leading underscore & file extension are removed in the @import statement.
+
+// @import "my_scss_file";
